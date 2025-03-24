@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexing Experiment</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            align-content:center;
+            gap: 5px;
+            justify-content: center;
+            
+
+        }
+        .items{
+            color: antiquewhite;
+            height: 140px;
+            width: 200px;
+            text-align: center;
+            background-color:black;
+            text-decoration-color: antiquewhite;
+            border: 1px;
+         }
+        
+    </style>
+</head>
+<body style="background-image: url(./wallpaper.jpg);">
+    <div class="container">
+        <div class="items" flex-shrink="1">item1</div>
+        <div class="items">items2</div>
+        <div class="items" style="order:-3;">items3</div>
+        <div class="items">items4</div>
+        <div class="items" >items5</div>
+        <div class="items">items6</div>
+        <div class="items" style="flex-grow: 5;">items7</div>
+        <div class="items">items8</div>
+        <div class="items" style="flex-basis: 400px;">items9</div>
+        <div class="items" style="flex-grow: 1;">items10</div>
+        <div class="items" style="flex-shrink: 1;">item11</div>
+        <div class="items" style="order: -1;">item12</div>
+    </div>
+</body>
+</html>
